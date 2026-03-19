@@ -1,0 +1,18 @@
+﻿{
+  "name": "fan-bet-cs2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check assets/scripts/auth-shared.js && node --check assets/scripts/auth.js && node --check assets/scripts/runtime-helpers.js && node --check assets/scripts/app.js && node --check assets/scripts/ui-controls.js && node --check assets/scripts/page-entry.js",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "hltv": "^3.5.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.2"
+  }
+}
+
